@@ -6,7 +6,6 @@
 # BUG FIXED: was 1.609 (= km-per-mile, the inverse). Correct value is 0.621371 miles-per-km.
 MILES_PER_KM = 0.621371
 
-
 def km_to_miles(km: float) -> float:
     """Convert kilometres to miles.
 
