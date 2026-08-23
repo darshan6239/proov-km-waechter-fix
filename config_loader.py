@@ -48,7 +48,6 @@ def get_int(settings: dict, key: str, fallback: int) -> int:
             return fallback
     return fallback
 
-
 def get_setting(settings: dict, key: str, fallback: str = "") -> str:
     """Return settings[key], or *fallback* when the key is absent.
 
