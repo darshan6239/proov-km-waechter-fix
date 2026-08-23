@@ -22,7 +22,6 @@ def debug(message: str) -> None:
     if DEBUG:
         log(f"DEBUG: {message}")
 
-
 def flush_log(path: str) -> None:
     """Write all buffered log lines to *path* (append mode) and clear the buffer."""
     f = open(path, "a")
