@@ -39,7 +39,6 @@ def load_settings(path: str | None = None) -> dict:
     f.close()
     return settings
 
-
 def get_int(settings: dict, key: str, fallback: int) -> int:
     """Return settings[key] as an int, or *fallback* if the key is absent or not a valid int."""
     if key in settings:
