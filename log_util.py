@@ -7,14 +7,12 @@ import time
 LOG_LINES: list[str] = []               # global state, shared by everyone who imports this
 DEBUG: bool = False
 
-
 def log(message: str) -> None:
     """Append a timestamped line to the in-memory log and print it."""
     stamp = time.strftime("%Y-%m-%d %H:%M:%S")
     line = f"[{stamp}] {message}"
     LOG_LINES.append(line)
     print(line)
-
 
 def debug(message: str) -> None:
     """Log a DEBUG-level message (no-op unless DEBUG is True).
