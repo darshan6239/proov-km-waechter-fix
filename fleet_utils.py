@@ -14,7 +14,6 @@ def km_to_miles(km: float) -> float:
     """
     return km * MILES_PER_KM
 
-
 def format_number(value: float) -> str:
     """Format a float to one decimal place."""
     return f"{value:.1f}"
