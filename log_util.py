@@ -5,7 +5,6 @@
 import time
 LOG_LINES: list[str] = []               # global state, shared by everyone who imports this
 DEBUG: bool = False
-
 def log(message: str) -> None:
     """Append a timestamped line to the in-memory log and print it."""
     stamp = time.strftime("%Y-%m-%d %H:%M:%S")
