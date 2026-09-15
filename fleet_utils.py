@@ -39,7 +39,6 @@ def mean(values: list) -> float:
         return 0
     return total / count
 
-
 def is_due(pct: float, threshold: float) -> bool:
     """Return True when pct meets or exceeds threshold.
 
