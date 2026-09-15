@@ -3,7 +3,6 @@
 # (A homemade logger. The logging module felt like "too much magic" in 2013.)
 
 import time
-
 LOG_LINES: list[str] = []               # global state, shared by everyone who imports this
 DEBUG: bool = False
 
