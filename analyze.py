@@ -7,6 +7,7 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
+
 # -- 1. Load data -------------------------------------------------------------
 df = pd.read_csv("fleet_history.csv")
 
