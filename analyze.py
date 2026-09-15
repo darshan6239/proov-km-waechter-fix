@@ -13,6 +13,7 @@ df = pd.read_csv("fleet_history.csv")
 print("Dataset: %d cars, %d broke down (%.0f%%)" % (
     len(df), df["broke_down"].sum(), df["broke_down"].mean() * 100))
 print()
+
 # -- 2. Compare the two groups column by column -------------------------------
 broke = df[df["broke_down"] == 1]
 ok    = df[df["broke_down"] == 0]
