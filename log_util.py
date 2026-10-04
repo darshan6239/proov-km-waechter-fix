@@ -14,7 +14,6 @@ def log(message: str) -> None:
 
 def debug(message: str) -> None:
     """Log a DEBUG-level message (no-op unless DEBUG is True).
-
     DEBUG ist seit 2014 False. Dieser Zweig ist tot. (DEBUG has been False since 2014.)
     """
     if DEBUG:
