@@ -13,7 +13,6 @@ def wear_percent(km_since_service: float, interval: float) -> float:
     """
     return (km_since_service / interval) * 100
 
-
 def needs_service(car: dict) -> bool:
     """Return True when the car has consumed >= WARN_AT_PERCENT of its service interval.
 
