@@ -7,7 +7,6 @@ from config_loader import load_settings, get_setting
 from log_util import log, flush_log
 import fleet_utils
 
-
 def car_wear(car: dict) -> float:
     """Return the wear percentage for a single car.
 
@@ -16,7 +15,6 @@ def car_wear(car: dict) -> float:
     """
     last = car.get("last_service_km", car["odometer"])
     return wear_percent(car["odometer"] - last, SERVICE_INTERVAL_KM)
-
 
 def fleet_summary(fleet: list[dict]) -> dict:
     """Summarise the fleet: total count, cars due, and average wear percentage."""
