@@ -12,7 +12,6 @@ KNOWN_KEYS = [
     "log_file",
     "mileage_unit",
 ]
-
 def load_settings(path: str | None = None) -> dict:
     """Read settings.cfg and return a dict of recognised key/value pairs.
 
