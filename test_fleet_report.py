@@ -6,11 +6,9 @@ SAMPLE = [
     {"id": "VOS-2210", "odometer": 48400, "last_service_km": 45000},
 ]
 
-
 def test_summary_counts_due_cars():
     # Only VOS-4471 is nearly worn, so exactly one car is due.
     assert fleet_summary(SAMPLE)["due"] == 1
-
 
 def test_summary_does_not_crash_without_last_service_km():
     # A car with no "last_service_km" key must not raise a KeyError; it should
